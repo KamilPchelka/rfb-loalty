@@ -38,7 +38,7 @@ task copyDockerFiles(type: Copy) {
     exclude "**/*.yml"
 }
 
-def rfbImageName = 'kamilpchelka/circleci_build_rfb:1.1'
+def rfbImageName = 'kamilpchelka/circleci_build_rfb'
 
 task buildDocker(type: DockerBuildImage, dependsOn: 'copyDockerFiles') {
     description = "Package application as Docker image"
