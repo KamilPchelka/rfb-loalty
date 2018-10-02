@@ -7,7 +7,7 @@ jobs:
     build:
         docker:
         # specify the version you desire here
-        - image: kamilpchelka/circleci_build_rfb
+        - image: kamilpchelka/circleci_build_rfb:1.1
 
         # Specify service dependencies here if necessary
         # CircleCI maintains a library of pre-built images
