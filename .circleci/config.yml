@@ -7,7 +7,7 @@ jobs:
     build:
         docker:
         # specify the version you desire here
-        - image: kamilpchelka/rfbloyalty
+        - image: kamilpchelka/circleci_build_rfb
 
         # Specify service dependencies here if necessary
         # CircleCI maintains a library of pre-built images
@@ -63,6 +63,7 @@ jobs:
         - run:
               name: install yarn
               command: sudo npm install -g yarn
+
 
         - run:
               name: Build Docker Image
